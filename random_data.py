@@ -12,7 +12,7 @@ states = ["VIC", "KTH", "SYD", "BSB", "PKR", "BTW", "CHT", "ADE", "PTH", "DAR", 
 
 for num in range(100):
     first = random.choice(first_names)
-    last = random.choices(last_names)
+    last = random.choice(last_names)
 
     phone = f'{random.randint(100, 999)}-555-{random.randint(1000,9999)}'
 
@@ -21,8 +21,8 @@ for num in range(100):
     city = random.choice(fake_cities)
     state = random.choice(states)
     zip_code = random.randint(1000, 9999)
-    address = f'{street_num} {street} St., {city}{state}{zip_code}'
+    address = f'{street_num} {street} St., {city} {state} {zip_code}'
 
-    email = first.lower() + last.lower() + 'olamail.com'
+    email = first.lower() + last.lower() + '@olamail.com'
 
     print(f'{first} {last}\n{phone}\n{address}\n{email}\n')
