@@ -1,5 +1,6 @@
 import random 
 
+
 greetings = ['Hello', 'Hi', 'Hola', 'Ola', 'Namastey']
 value = random.choice(greetings) #Returns a random element/choice from the given sequence/ list
 print(value + ' Roshan!')
@@ -19,3 +20,15 @@ print (value)
 
 value = random.randint(1, 6) # Returns a random number between the given range
 print (value)
+
+
+
+deck = list(range(1, 53)) #1 is inclusive and 53 is exclusive
+random.shuffle(deck) # Takes a sequence/list and returns the sequence in a random order
+print(deck)
+
+hand = random.choices(deck, k = 5)  # Cannot use choice to generate unique set of 5 cards so we use sample method
+print(hand)
+
+hand = random.sample(deck, k=5) #returns unique samples of sequence
+print(hand)
