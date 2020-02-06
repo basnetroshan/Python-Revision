@@ -50,3 +50,6 @@ print(type(x))
 
 x = memoryview(bytes(5))	
 print(type(x))
+
+x = str(20) #setting the specific data type
+print(type(x))
