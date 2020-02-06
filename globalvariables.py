@@ -3,7 +3,7 @@
 x = "awesome"
 
 def myfunc():
-    print("Learning python is " +x)
+    print("Learning python is really" +x)
 
 myfunc()
 
