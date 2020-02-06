@@ -5,7 +5,8 @@ value = random.choice(greetings) #Returns a random element/choice from the given
 print(value + ' Roshan!')
 
 colors = ['Red', 'Black', 'Green']
-results = random.choices(colors, k=10)
+results = random.choices(colors, weights= [18, 18, 2], k=10) # K = how many time we want to pick a value, 
+# weight: what we want to weigh eg: what are the odds that green will appear 
 print(results)
 
 print(random.randrange(1,100)) # Returns a random number between the given range
