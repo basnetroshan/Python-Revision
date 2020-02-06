@@ -3,7 +3,10 @@
 x = "awesome"
 
 def myfunc():
-    print("Learning python is really" +x)
+    x = "fantastic" #local variable, can be used only inside the function
+    print("Python is " +x)
 
 myfunc()
+
+print("Python is " +x)
 
