@@ -11,3 +11,16 @@ print(are_you_sad(True, False))
         #return True
     #else:
         #return False
+
+    
+def myFunction():
+    return False
+
+if myFunction():
+    print("YESS")
+else:
+    print("NOO")
+
+
+x = "Roshan" # to check if an object is of certain data type
+print(isinstance(x, int))
